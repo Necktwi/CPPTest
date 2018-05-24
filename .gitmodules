@@ -1,0 +1,6 @@
+[submodule "googletest"]
+	path = googletest
+	url = https://necktwi@github.com/google/googletest.git
+[submodule "ferrybase"]
+	path = ferrybase
+	url = https://necktwi@github.com/necktwi/ferrybase.git

@@ -18,5 +18,10 @@ class testCPP
     void HelloWorld(const char *);
 };
 
+unsigned long factorial (unsigned long n);
+unsigned long factorial_by_loop (unsigned short n);
+unsigned int fibonacci (unsigned int n);
+unsigned int fibonacci_by_loop (unsigned int n);
+
 #pragma GCC visibility pop
 #endif

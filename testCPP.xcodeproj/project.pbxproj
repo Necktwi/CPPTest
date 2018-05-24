@@ -10,13 +10,121 @@
 		650E31C820B51F5F00B31AF4 /* testCPP.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 650E31C720B51F5F00B31AF4 /* testCPP.hpp */; };
 		650E31CA20B51F5F00B31AF4 /* testCPPPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 650E31C920B51F5F00B31AF4 /* testCPPPriv.hpp */; };
 		650E31CC20B51F5F00B31AF4 /* testCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31CB20B51F5F00B31AF4 /* testCPP.cpp */; };
+		650E31D920B5284500B31AF4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31D820B5284500B31AF4 /* main.cpp */; };
+		650E31FA20B52F0700B31AF4 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E31EC20B5288800B31AF4 /* libgtest.a */; };
+		650E320F20B541F300B31AF4 /* libferrybase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E320320B540FA00B31AF4 /* libferrybase.a */; };
+		650E321220B54BA100B31AF4 /* libtestCPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E31C420B51F5F00B31AF4 /* libtestCPP.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		650E31E920B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		650E31EB20B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		650E31ED20B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		650E31EF20B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		650E31F120B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		650E31F320B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		650E31F520B5288800B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		650E31F720B52D8E00B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C848F9101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		650E320220B540FA00B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7089BCCE4DB4B758CA35C50;
+			remoteInfo = ferrybase;
+		};
+		650E320B20B5411600B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E320420B5411600B31AF4 /* ferrybase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7089BCCE4DB4B758CA35C50;
+			remoteInfo = ferrybase;
+		};
+		650E320D20B541E300B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F6084C842D4A1EA686291B;
+			remoteInfo = ferrybase;
+		};
+		650E321020B54B9000B31AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31BC20B51F5F00B31AF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650E31C320B51F5F00B31AF4;
+			remoteInfo = testCPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		650E31D420B5284500B31AF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		650E31C420B51F5F00B31AF4 /* libtestCPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtestCPP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		650E31C720B51F5F00B31AF4 /* testCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testCPP.hpp; sourceTree = "<group>"; };
 		650E31C920B51F5F00B31AF4 /* testCPPPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testCPPPriv.hpp; sourceTree = "<group>"; };
 		650E31CB20B51F5F00B31AF4 /* testCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testCPP.cpp; sourceTree = "<group>"; };
+		650E31D620B5284500B31AF4 /* testCPPTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCPPTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		650E31D820B5284500B31AF4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		650E31DD20B5288800B31AF4 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ferrybase.xcodeproj; path = ferrybase/build/ferrybase.xcodeproj; sourceTree = "<group>"; };
+		650E320420B5411600B31AF4 /* ferrybase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ferrybase.xcodeproj; path = ferrybase/build/ferrybase.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +135,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650E31D320B5284500B31AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650E321220B54BA100B31AF4 /* libtestCPP.a in Frameworks */,
+				650E320F20B541F300B31AF4 /* libferrybase.a in Frameworks */,
+				650E31FA20B52F0700B31AF4 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -34,7 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				650E31C620B51F5F00B31AF4 /* testCPP */,
+				650E31D720B5284500B31AF4 /* testCPPTests */,
 				650E31C520B51F5F00B31AF4 /* Products */,
+				650E320420B5411600B31AF4 /* ferrybase.xcodeproj */,
+				650E31DD20B5288800B31AF4 /* gtest.xcodeproj */,
+				650E31F920B52F0700B31AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -42,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				650E31C420B51F5F00B31AF4 /* libtestCPP.a */,
+				650E31D620B5284500B31AF4 /* testCPPTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +177,52 @@
 				650E31CB20B51F5F00B31AF4 /* testCPP.cpp */,
 			);
 			path = testCPP;
+			sourceTree = "<group>";
+		};
+		650E31D720B5284500B31AF4 /* testCPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				650E31D820B5284500B31AF4 /* main.cpp */,
+			);
+			path = testCPPTests;
+			sourceTree = "<group>";
+		};
+		650E31DE20B5288800B31AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650E31EA20B5288800B31AF4 /* gtest.framework */,
+				650E31EC20B5288800B31AF4 /* libgtest.a */,
+				650E31EE20B5288800B31AF4 /* libgtest_main.a */,
+				650E31F020B5288800B31AF4 /* gtest_unittest-framework */,
+				650E31F220B5288800B31AF4 /* gtest_unittest */,
+				650E31F420B5288800B31AF4 /* sample1_unittest-framework */,
+				650E31F620B5288800B31AF4 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		650E31F920B52F0700B31AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650E31FC20B540FA00B31AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650E320320B540FA00B31AF4 /* libferrybase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		650E320520B5411600B31AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650E320C20B5411600B31AF4 /* libferrybase.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +257,26 @@
 			productReference = 650E31C420B51F5F00B31AF4 /* libtestCPP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		650E31D520B5284500B31AF4 /* testCPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650E31DA20B5284500B31AF4 /* Build configuration list for PBXNativeTarget "testCPPTests" */;
+			buildPhases = (
+				650E31D220B5284500B31AF4 /* Sources */,
+				650E31D320B5284500B31AF4 /* Frameworks */,
+				650E31D420B5284500B31AF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650E321120B54B9000B31AF4 /* PBXTargetDependency */,
+				650E320E20B541E300B31AF4 /* PBXTargetDependency */,
+				650E31F820B52D8E00B31AF4 /* PBXTargetDependency */,
+			);
+			name = testCPPTests;
+			productName = testCPPTests;
+			productReference = 650E31D620B5284500B31AF4 /* testCPPTests */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +287,9 @@
 				ORGANIZATIONNAME = ferryfair;
 				TargetAttributes = {
 					650E31C320B51F5F00B31AF4 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					650E31D520B5284500B31AF4 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -112,12 +304,93 @@
 			mainGroup = 650E31BB20B51F5F00B31AF4;
 			productRefGroup = 650E31C520B51F5F00B31AF4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 650E31FC20B540FA00B31AF4 /* Products */;
+					ProjectRef = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
+				},
+				{
+					ProductGroup = 650E320520B5411600B31AF4 /* Products */;
+					ProjectRef = 650E320420B5411600B31AF4 /* ferrybase.xcodeproj */;
+				},
+				{
+					ProductGroup = 650E31DE20B5288800B31AF4 /* Products */;
+					ProjectRef = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				650E31C320B51F5F00B31AF4 /* testCPP */,
+				650E31D520B5284500B31AF4 /* testCPPTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		650E31EA20B5288800B31AF4 /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = 650E31E920B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31EC20B5288800B31AF4 /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 650E31EB20B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31EE20B5288800B31AF4 /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 650E31ED20B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31F020B5288800B31AF4 /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = 650E31EF20B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31F220B5288800B31AF4 /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = 650E31F120B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31F420B5288800B31AF4 /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = 650E31F320B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E31F620B5288800B31AF4 /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = 650E31F520B5288800B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E320320B540FA00B31AF4 /* libferrybase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libferrybase.a;
+			remoteRef = 650E320220B540FA00B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		650E320C20B5411600B31AF4 /* libferrybase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libferrybase.a;
+			remoteRef = 650E320B20B5411600B31AF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		650E31C020B51F5F00B31AF4 /* Sources */ = {
@@ -128,7 +401,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		650E31D220B5284500B31AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650E31D920B5284500B31AF4 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		650E31F820B52D8E00B31AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gtest-static";
+			targetProxy = 650E31F720B52D8E00B31AF4 /* PBXContainerItemProxy */;
+		};
+		650E320E20B541E300B31AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ferrybase;
+			targetProxy = 650E320D20B541E300B31AF4 /* PBXContainerItemProxy */;
+		};
+		650E321120B54B9000B31AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650E31C320B51F5F00B31AF4 /* testCPP */;
+			targetProxy = 650E321020B54B9000B31AF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		650E31CD20B51F5F00B31AF4 /* Debug */ = {
@@ -266,6 +565,32 @@
 			};
 			name = Release;
 		};
+		650E31DB20B5284500B31AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92458GN43Z;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/googletest/googletest/include,
+					$SRCROOT/ferrybase,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		650E31DC20B5284500B31AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92458GN43Z;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/googletest/googletest/include,
+					$SRCROOT/ferrybase,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +608,15 @@
 			buildConfigurations = (
 				650E31D020B51F5F00B31AF4 /* Debug */,
 				650E31D120B51F5F00B31AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650E31DA20B5284500B31AF4 /* Build configuration list for PBXNativeTarget "testCPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650E31DB20B5284500B31AF4 /* Debug */,
+				650E31DC20B5284500B31AF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
