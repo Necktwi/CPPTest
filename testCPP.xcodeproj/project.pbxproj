@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		650E31C820B51F5F00B31AF4 /* testCPP.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 650E31C720B51F5F00B31AF4 /* testCPP.hpp */; };
-		650E31CA20B51F5F00B31AF4 /* testCPPPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 650E31C920B51F5F00B31AF4 /* testCPPPriv.hpp */; };
 		650E31CC20B51F5F00B31AF4 /* testCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31CB20B51F5F00B31AF4 /* testCPP.cpp */; };
 		650E31D920B5284500B31AF4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31D820B5284500B31AF4 /* main.cpp */; };
 		650E31FA20B52F0700B31AF4 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E31EC20B5288800B31AF4 /* libgtest.a */; };
@@ -118,7 +117,6 @@
 /* Begin PBXFileReference section */
 		650E31C420B51F5F00B31AF4 /* libtestCPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtestCPP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		650E31C720B51F5F00B31AF4 /* testCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testCPP.hpp; sourceTree = "<group>"; };
-		650E31C920B51F5F00B31AF4 /* testCPPPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testCPPPriv.hpp; sourceTree = "<group>"; };
 		650E31CB20B51F5F00B31AF4 /* testCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testCPP.cpp; sourceTree = "<group>"; };
 		650E31D620B5284500B31AF4 /* testCPPTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCPPTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		650E31D820B5284500B31AF4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				650E31C720B51F5F00B31AF4 /* testCPP.hpp */,
-				650E31C920B51F5F00B31AF4 /* testCPPPriv.hpp */,
 				650E31CB20B51F5F00B31AF4 /* testCPP.cpp */,
 			);
 			path = testCPP;
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				650E31C820B51F5F00B31AF4 /* testCPP.hpp in Headers */,
-				650E31CA20B51F5F00B31AF4 /* testCPPPriv.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
