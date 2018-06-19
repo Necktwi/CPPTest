@@ -11,10 +11,9 @@
 #include <FerryTimeStamp.h>
 #include <mystdlib.h>
 
-using namespace std;
-
 int main(int argc, const char * argv[]) {
-   std::cout << "%SUITE_STARTED% testCPP" << std::endl << std::endl;
+   cfout_ cfout("CPPTestResults.txt");
+   cfout << "%SUITE_STARTED% CPPTest" << "\n" << "\n";
    
    FerryTimeStamp TestStart;
    FerryTimeStamp TestEnd;
@@ -24,63 +23,63 @@ int main(int argc, const char * argv[]) {
    SuiteStart.Update();
    
    unsigned long f = 0;
-   std::cout << "%TEST_STARTED% factorial" << std::endl;
+   cfout << "%TEST_STARTED% factorial" << "\n";
    TestStart.Update(); {
       f = factorial(15);
    }; TestEnd.Update();
-   std::cout << "factorial(15): " << f << std::endl;
+   cfout << "factorial(15): " << f << "\n";
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " factorial" << std::endl;
-   std::cout << std::endl;
+   cfout << "%TEST_FINISHED% time: " << Diff << " factorial" << "\n";
+   cfout << "\n";
    
-   std::cout << "%TEST_STARTED% factorial_by_loop" << std::endl;
+   cfout << "%TEST_STARTED% factorial_by_loop" << "\n";
    TestStart.Update(); {
       f = factorial_by_loop(15);
    }; TestEnd.Update();
-   std::cout << "factorial_by_loop(15): " << f << std::endl;
+   cfout << "factorial_by_loop(15): " << f << "\n";
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " factorial_by_loop" <<
-      std::endl;
-   std::cout << std::endl;
+   cfout << "%TEST_FINISHED% time: " << Diff << " factorial_by_loop" <<
+      "\n";
+   cfout << "\n";
    
-   std::cout << "%TEST_STARTED% fibonacci" << std::endl;
+   cfout << "%TEST_STARTED% fibonacci" << "\n";
    TestStart.Update(); {
       f = fibonacci(15);
    }; TestEnd.Update();
-   cout << "fibonacci(15): " << f << endl;
+   cfout << "fibonacci(15): " << f << "\n";
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " fibonacci" << std::endl;
-   std::cout << std::endl;
+   cfout << "%TEST_FINISHED% time: " << Diff << " fibonacci" << "\n";
+   cfout << "\n";
    
-   std::cout << "%TEST_STARTED% fibonacci_by_loop" << std::endl;
+   cfout << "%TEST_STARTED% fibonacci_by_loop" << "\n";
    TestStart.Update(); {
       f = fibonacci_by_loop(15);
    }; TestEnd.Update();
-   cout << "fibonacci_by_loop(15): " << f << endl;
+   cfout << "fibonacci_by_loop(15): " << f << "\n";
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " fibonacci_by_loop" <<
-      std::endl;
-   std::cout << std::endl;
+   cfout << "%TEST_FINISHED% time: " << Diff << " fibonacci_by_loop" <<
+      "\n";
+   cfout << "\n";
    
-   std::cout << "%TEST_STARTED% print ClassNStruct" << std::endl;
+   cfout << "%TEST_STARTED% print ClassNStruct" << "\n";
    TestStart.Update(); {
-      cout << "{" << endl;
-      cout << "\tInt size: "    << sizeof(int)       << endl;
-      cout << "\tFloat size: "  << sizeof(float)     << endl;
-      cout << "\tuint16 size: " << sizeof(uint16_t)  << endl;
-      cout << "\tChar size: "   << sizeof(char)      << endl;
-      cout << "}" << endl;
-      cout << "Class size: "  << sizeof(ClassEG_)  << endl;
-      cout << "Struct size: " << sizeof(StructEG_) << endl;
+      cfout << "{" << "\n";
+      cfout << "\tInt size: "    << sizeof(int)       << "\n";
+      cfout << "\tFloat size: "  << sizeof(float)     << "\n";
+      cfout << "\tuint16 size: " << sizeof(uint16_t)  << "\n";
+      cfout << "\tChar size: "   << sizeof(char)      << "\n";
+      cfout << "}" << "\n";
+      cfout << "Class size: "  << sizeof(ClassEG_)    << "\n";
+      cfout << "Struct size: " << sizeof(StructEG_)   << "\n";
    }; TestEnd.Update();
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " ClassNStruct"
-      << std::endl;
-   std::cout << std::endl;
+   cfout << "%TEST_FINISHED% time: " << Diff << " ClassNStruct"
+      << "\n";
+   cfout << "\n";
    
    SuiteEnd.Update();
    Diff = SuiteEnd - SuiteStart;
-   std::cout << "%SUITE_FINISHED% time: " << Diff << std::endl;
+   cfout << "%SUITE_FINISHED% time: " << Diff << "\n";
    
    return (EXIT_SUCCESS);
 }
