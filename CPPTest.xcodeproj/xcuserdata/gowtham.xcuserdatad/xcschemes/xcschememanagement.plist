@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CPPTestLibrary.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>CPPTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>testCPP.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>650E31D520B5284500B31AF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65D6ADF820D8E3F300C91853</key>
 		<dict>
 			<key>primary</key>
 			<true/>

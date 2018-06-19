@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650E31C820B51F5F00B31AF4 /* testCPP.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 650E31C720B51F5F00B31AF4 /* testCPP.hpp */; };
-		650E31CC20B51F5F00B31AF4 /* testCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31CB20B51F5F00B31AF4 /* testCPP.cpp */; };
-		650E31D920B5284500B31AF4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650E31D820B5284500B31AF4 /* main.cpp */; };
-		650E31FA20B52F0700B31AF4 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E31EC20B5288800B31AF4 /* libgtest.a */; };
-		650E320F20B541F300B31AF4 /* libferrybase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E320320B540FA00B31AF4 /* libferrybase.a */; };
-		650E321220B54BA100B31AF4 /* libtestCPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E31C420B51F5F00B31AF4 /* libtestCPP.a */; };
+		65D6ADFC20D8E3F300C91853 /* CPPTestLibrary.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65D6ADFB20D8E3F300C91853 /* CPPTestLibrary.hpp */; };
+		65D6AE2520D8E5DF00C91853 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D6AE2420D8E5DF00C91853 /* main.cpp */; };
+		65D6AE2D20D8E64A00C91853 /* libCPPTestLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6ADF920D8E3F300C91853 /* libCPPTestLibrary.a */; };
+		65D6AE2E20D8E64F00C91853 /* libferrybase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E320320B540FA00B31AF4 /* libferrybase.a */; };
+		65D6AE4920D8ED1E00C91853 /* CPPTestLibraryPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65D6AE4820D8ED1E00C91853 /* CPPTestLibraryPriv.hpp */; };
+		65D6AE4B20D8EDA200C91853 /* CPPTestLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D6AE4A20D8EDA200C91853 /* CPPTestLibrary.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +65,6 @@
 			remoteGlobalIDString = 40C84997101A36A60083642A;
 			remoteInfo = "sample1_unittest-static";
 		};
-		650E31F720B52D8E00B31AF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 650E31DD20B5288800B31AF4 /* gtest.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 40C848F9101A209C0083642A;
-			remoteInfo = "gtest-static";
-		};
 		650E320220B540FA00B31AF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
@@ -86,24 +79,24 @@
 			remoteGlobalIDString = F7089BCCE4DB4B758CA35C50;
 			remoteInfo = ferrybase;
 		};
-		650E320D20B541E300B31AF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 95F6084C842D4A1EA686291B;
-			remoteInfo = ferrybase;
-		};
-		650E321020B54B9000B31AF4 /* PBXContainerItemProxy */ = {
+		65D6AE2920D8E61C00C91853 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 650E31BC20B51F5F00B31AF4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 650E31C320B51F5F00B31AF4;
-			remoteInfo = testCPP;
+			remoteGlobalIDString = 65D6ADF820D8E3F300C91853;
+			remoteInfo = CPPTestLibrary;
+		};
+		65D6AE2B20D8E62B00C91853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 829A3F5717174147928A97FF;
+			remoteInfo = ferrybase;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		650E31D420B5284500B31AF4 /* CopyFiles */ = {
+		65D6AE2020D8E5DF00C91853 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -115,31 +108,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		650E31C420B51F5F00B31AF4 /* libtestCPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtestCPP.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		650E31C720B51F5F00B31AF4 /* testCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testCPP.hpp; sourceTree = "<group>"; };
-		650E31CB20B51F5F00B31AF4 /* testCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testCPP.cpp; sourceTree = "<group>"; };
-		650E31D620B5284500B31AF4 /* testCPPTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCPPTests; sourceTree = BUILT_PRODUCTS_DIR; };
-		650E31D820B5284500B31AF4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		650E31DD20B5288800B31AF4 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 		650E31FB20B540FA00B31AF4 /* ferrybase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ferrybase.xcodeproj; path = ferrybase/build/ferrybase.xcodeproj; sourceTree = "<group>"; };
 		650E320420B5411600B31AF4 /* ferrybase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ferrybase.xcodeproj; path = ferrybase/build/ferrybase.xcodeproj; sourceTree = "<group>"; };
+		65D6ADF920D8E3F300C91853 /* libCPPTestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCPPTestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D6ADFB20D8E3F300C91853 /* CPPTestLibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPTestLibrary.hpp; sourceTree = "<group>"; };
+		65D6AE2220D8E5DF00C91853 /* CPPTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D6AE2420D8E5DF00C91853 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		65D6AE4820D8ED1E00C91853 /* CPPTestLibraryPriv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPTestLibraryPriv.hpp; sourceTree = "<group>"; };
+		65D6AE4A20D8EDA200C91853 /* CPPTestLibrary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPTestLibrary.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		650E31C120B51F5F00B31AF4 /* Frameworks */ = {
+		65D6ADF620D8E3F300C91853 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		650E31D320B5284500B31AF4 /* Frameworks */ = {
+		65D6AE1F20D8E5DF00C91853 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650E321220B54BA100B31AF4 /* libtestCPP.a in Frameworks */,
-				650E320F20B541F300B31AF4 /* libferrybase.a in Frameworks */,
-				650E31FA20B52F0700B31AF4 /* libgtest.a in Frameworks */,
+				65D6AE2E20D8E64F00C91853 /* libferrybase.a in Frameworks */,
+				65D6AE2D20D8E64A00C91853 /* libCPPTestLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +142,8 @@
 		650E31BB20B51F5F00B31AF4 = {
 			isa = PBXGroup;
 			children = (
-				650E31C620B51F5F00B31AF4 /* testCPP */,
-				650E31D720B5284500B31AF4 /* testCPPTests */,
+				65D6ADFA20D8E3F300C91853 /* CPPTestLibrary */,
+				65D6AE2320D8E5DF00C91853 /* CPPTests */,
 				650E31C520B51F5F00B31AF4 /* Products */,
 				650E320420B5411600B31AF4 /* ferrybase.xcodeproj */,
 				650E31DD20B5288800B31AF4 /* gtest.xcodeproj */,
@@ -161,27 +154,10 @@
 		650E31C520B51F5F00B31AF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				650E31C420B51F5F00B31AF4 /* libtestCPP.a */,
-				650E31D620B5284500B31AF4 /* testCPPTests */,
+				65D6ADF920D8E3F300C91853 /* libCPPTestLibrary.a */,
+				65D6AE2220D8E5DF00C91853 /* CPPTests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		650E31C620B51F5F00B31AF4 /* testCPP */ = {
-			isa = PBXGroup;
-			children = (
-				650E31C720B51F5F00B31AF4 /* testCPP.hpp */,
-				650E31CB20B51F5F00B31AF4 /* testCPP.cpp */,
-			);
-			path = testCPP;
-			sourceTree = "<group>";
-		};
-		650E31D720B5284500B31AF4 /* testCPPTests */ = {
-			isa = PBXGroup;
-			children = (
-				650E31D820B5284500B31AF4 /* main.cpp */,
-			);
-			path = testCPPTests;
 			sourceTree = "<group>";
 		};
 		650E31DE20B5288800B31AF4 /* Products */ = {
@@ -222,55 +198,73 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		65D6ADFA20D8E3F300C91853 /* CPPTestLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				65D6AE4A20D8EDA200C91853 /* CPPTestLibrary.cpp */,
+				65D6AE4820D8ED1E00C91853 /* CPPTestLibraryPriv.hpp */,
+				65D6ADFB20D8E3F300C91853 /* CPPTestLibrary.hpp */,
+			);
+			path = CPPTestLibrary;
+			sourceTree = "<group>";
+		};
+		65D6AE2320D8E5DF00C91853 /* CPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				65D6AE2420D8E5DF00C91853 /* main.cpp */,
+			);
+			path = CPPTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		650E31C220B51F5F00B31AF4 /* Headers */ = {
+		65D6ADF720D8E3F300C91853 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650E31C820B51F5F00B31AF4 /* testCPP.hpp in Headers */,
+				65D6ADFC20D8E3F300C91853 /* CPPTestLibrary.hpp in Headers */,
+				65D6AE4920D8ED1E00C91853 /* CPPTestLibraryPriv.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		650E31C320B51F5F00B31AF4 /* testCPP */ = {
+		65D6ADF820D8E3F300C91853 /* CPPTestLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 650E31CF20B51F5F00B31AF4 /* Build configuration list for PBXNativeTarget "testCPP" */;
+			buildConfigurationList = 65D6AE0120D8E3F300C91853 /* Build configuration list for PBXNativeTarget "CPPTestLibrary" */;
 			buildPhases = (
-				650E31C020B51F5F00B31AF4 /* Sources */,
-				650E31C120B51F5F00B31AF4 /* Frameworks */,
-				650E31C220B51F5F00B31AF4 /* Headers */,
+				65D6ADF520D8E3F300C91853 /* Sources */,
+				65D6ADF620D8E3F300C91853 /* Frameworks */,
+				65D6ADF720D8E3F300C91853 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = testCPP;
-			productName = testCPP;
-			productReference = 650E31C420B51F5F00B31AF4 /* libtestCPP.a */;
+			name = CPPTestLibrary;
+			productName = CPPTestLibrary;
+			productReference = 65D6ADF920D8E3F300C91853 /* libCPPTestLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		650E31D520B5284500B31AF4 /* testCPPTests */ = {
+		65D6AE2120D8E5DF00C91853 /* CPPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 650E31DA20B5284500B31AF4 /* Build configuration list for PBXNativeTarget "testCPPTests" */;
+			buildConfigurationList = 65D6AE2620D8E5DF00C91853 /* Build configuration list for PBXNativeTarget "CPPTests" */;
 			buildPhases = (
-				650E31D220B5284500B31AF4 /* Sources */,
-				650E31D320B5284500B31AF4 /* Frameworks */,
-				650E31D420B5284500B31AF4 /* CopyFiles */,
+				65D6AE1E20D8E5DF00C91853 /* Sources */,
+				65D6AE1F20D8E5DF00C91853 /* Frameworks */,
+				65D6AE2020D8E5DF00C91853 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				650E321120B54B9000B31AF4 /* PBXTargetDependency */,
-				650E320E20B541E300B31AF4 /* PBXTargetDependency */,
-				650E31F820B52D8E00B31AF4 /* PBXTargetDependency */,
+				65D6AE2C20D8E62B00C91853 /* PBXTargetDependency */,
+				65D6AE2A20D8E61C00C91853 /* PBXTargetDependency */,
 			);
-			name = testCPPTests;
-			productName = testCPPTests;
-			productReference = 650E31D620B5284500B31AF4 /* testCPPTests */;
+			name = CPPTests;
+			productName = CPPTests;
+			productReference = 65D6AE2220D8E5DF00C91853 /* CPPTests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -282,15 +276,15 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ferryfair;
 				TargetAttributes = {
-					650E31C320B51F5F00B31AF4 = {
-						CreatedOnToolsVersion = 9.3.1;
+					65D6ADF820D8E3F300C91853 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
-					650E31D520B5284500B31AF4 = {
-						CreatedOnToolsVersion = 9.3.1;
+					65D6AE2120D8E5DF00C91853 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 650E31BF20B51F5F00B31AF4 /* Build configuration list for PBXProject "testCPP" */;
+			buildConfigurationList = 650E31BF20B51F5F00B31AF4 /* Build configuration list for PBXProject "CPPTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -316,8 +310,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				650E31C320B51F5F00B31AF4 /* testCPP */,
-				650E31D520B5284500B31AF4 /* testCPPTests */,
+				65D6ADF820D8E3F300C91853 /* CPPTestLibrary */,
+				65D6AE2120D8E5DF00C91853 /* CPPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -389,39 +383,34 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
-		650E31C020B51F5F00B31AF4 /* Sources */ = {
+		65D6ADF520D8E3F300C91853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650E31CC20B51F5F00B31AF4 /* testCPP.cpp in Sources */,
+				65D6AE4B20D8EDA200C91853 /* CPPTestLibrary.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		650E31D220B5284500B31AF4 /* Sources */ = {
+		65D6AE1E20D8E5DF00C91853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650E31D920B5284500B31AF4 /* main.cpp in Sources */,
+				65D6AE2520D8E5DF00C91853 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		650E31F820B52D8E00B31AF4 /* PBXTargetDependency */ = {
+		65D6AE2A20D8E61C00C91853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "gtest-static";
-			targetProxy = 650E31F720B52D8E00B31AF4 /* PBXContainerItemProxy */;
+			target = 65D6ADF820D8E3F300C91853 /* CPPTestLibrary */;
+			targetProxy = 65D6AE2920D8E61C00C91853 /* PBXContainerItemProxy */;
 		};
-		650E320E20B541E300B31AF4 /* PBXTargetDependency */ = {
+		65D6AE2C20D8E62B00C91853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ferrybase;
-			targetProxy = 650E320D20B541E300B31AF4 /* PBXContainerItemProxy */;
-		};
-		650E321120B54B9000B31AF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 650E31C320B51F5F00B31AF4 /* testCPP */;
-			targetProxy = 650E321020B54B9000B31AF4 /* PBXContainerItemProxy */;
+			targetProxy = 65D6AE2B20D8E62B00C91853 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -535,7 +524,7 @@
 			};
 			name = Release;
 		};
-		650E31D020B51F5F00B31AF4 /* Debug */ = {
+		65D6AE0220D8E3F300C91853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -548,7 +537,7 @@
 			};
 			name = Debug;
 		};
-		650E31D120B51F5F00B31AF4 /* Release */ = {
+		65D6AE0320D8E3F300C91853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -561,28 +550,22 @@
 			};
 			name = Release;
 		};
-		650E31DB20B5284500B31AF4 /* Debug */ = {
+		65D6AE2720D8E5DF00C91853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92458GN43Z;
-				HEADER_SEARCH_PATHS = (
-					$SRCROOT/googletest/googletest/include,
-					$SRCROOT/ferrybase,
-				);
+				HEADER_SEARCH_PATHS = $SRCROOT/ferrybase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		650E31DC20B5284500B31AF4 /* Release */ = {
+		65D6AE2820D8E5DF00C91853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92458GN43Z;
-				HEADER_SEARCH_PATHS = (
-					$SRCROOT/googletest/googletest/include,
-					$SRCROOT/ferrybase,
-				);
+				HEADER_SEARCH_PATHS = $SRCROOT/ferrybase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -590,7 +573,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		650E31BF20B51F5F00B31AF4 /* Build configuration list for PBXProject "testCPP" */ = {
+		650E31BF20B51F5F00B31AF4 /* Build configuration list for PBXProject "CPPTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650E31CD20B51F5F00B31AF4 /* Debug */,
@@ -599,20 +582,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		650E31CF20B51F5F00B31AF4 /* Build configuration list for PBXNativeTarget "testCPP" */ = {
+		65D6AE0120D8E3F300C91853 /* Build configuration list for PBXNativeTarget "CPPTestLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				650E31D020B51F5F00B31AF4 /* Debug */,
-				650E31D120B51F5F00B31AF4 /* Release */,
+				65D6AE0220D8E3F300C91853 /* Debug */,
+				65D6AE0320D8E3F300C91853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		650E31DA20B5284500B31AF4 /* Build configuration list for PBXNativeTarget "testCPPTests" */ = {
+		65D6AE2620D8E5DF00C91853 /* Build configuration list for PBXNativeTarget "CPPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				650E31DB20B5284500B31AF4 /* Debug */,
-				650E31DC20B5284500B31AF4 /* Release */,
+				65D6AE2720D8E5DF00C91853 /* Debug */,
+				65D6AE2820D8E5DF00C91853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

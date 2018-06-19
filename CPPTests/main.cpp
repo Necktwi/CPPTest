@@ -6,7 +6,7 @@
 //  Copyright © 2018 ferryfair. All rights reserved.
 //
 
-#include "testCPP.hpp"
+#include "CPPTestLibrary.hpp"
 #include <iostream>
 #include <FerryTimeStamp.h>
 #include <mystdlib.h>
