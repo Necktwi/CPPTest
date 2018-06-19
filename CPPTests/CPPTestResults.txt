@@ -1,4 +1,4 @@
-%SUITE_STARTED% testCPP
+%SUITE_STARTED% CPPTest
 
 %TEST_STARTED% factorial
 factorial(15): 1307674368000
@@ -10,7 +10,7 @@ factorial_by_loop(15): 1307674368000
 
 %TEST_STARTED% fibonacci
 fibonacci(15): 610
-%TEST_FINISHED% time: 0000000000.000004000 fibonacci
+%TEST_FINISHED% time: 0000000000.000006000 fibonacci
 
 %TEST_STARTED% fibonacci_by_loop
 fibonacci_by_loop(15): 610
@@ -25,6 +25,6 @@ fibonacci_by_loop(15): 610
 }
 Class size: 12
 Struct size: 12
-%TEST_FINISHED% time: 0000000000.000058000 ClassNStruct
+%TEST_FINISHED% time: 0000000000.000278000 ClassNStruct
 
-%SUITE_FINISHED% time: 0000000000.000362000
+%SUITE_FINISHED% time: 0000000000.000616000
