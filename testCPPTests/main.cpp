@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
       cout << "Struct size: " << sizeof(StructEG_) << endl;
    }; TestEnd.Update();
    Diff = TestEnd - TestStart;
-   std::cout << "%TEST_FINISHED% time: " << Diff << " print ClassNStruct"
+   std::cout << "%TEST_FINISHED% time: " << Diff << " ClassNStruct"
       << std::endl;
    std::cout << std::endl;
    
