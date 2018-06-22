@@ -10,6 +10,7 @@
 #define testCPP_
 
 #include <iostream>
+#include <signal.h>
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)
@@ -19,11 +20,14 @@ class testCPP
     public:
     void HelloWorld(const char *);
 };
+void signalHandler (int sig) {
+  printf("Overflow detected\n");
+}
 
 unsigned long factorial (unsigned long n);
 unsigned long factorial_by_loop (unsigned short n);
 unsigned int fibonacci (unsigned int n);
-unsigned int fibonacci_by_loop (unsigned int n);
+int64_t fibonacci_by_loop (int64_t n);
 
 void floating_point1 ();
 void floating_point2 ();
@@ -63,14 +67,16 @@ unsigned int fibonacci (unsigned int n) {
    }
 }
 
-unsigned int fibonacci_by_loop (unsigned int n) {
-   unsigned int n0 = 1;
-   unsigned int n1 = 1;
-   unsigned int n2 = 1;
+int64_t fibonacci_by_loop (int64_t n) {
+   signal(SIGABRT, &signalHandler);
+   int64_t n0 = 1;
+   int64_t n1 = 1;
+   int64_t n2 = 1;
    for (;n>2;--n) {
       n2 = n1;
       n1 = n0;
       n0 = n1 + n2;
+      std::cout << n0 << "\n";
    }
    return n0;
 }
@@ -122,6 +128,7 @@ void floating_point2 () {
       }
    }
 }
+
 
 #pragma GCC visibility pop
 #endif

@@ -42,20 +42,24 @@ int main(int argc, const char * argv[]) {
       "\n";
    cfout << "\n";
    
+   int64_t fi1, fi2;
    cfout << "%TEST_STARTED% fibonacci" << "\n";
    TestStart.Update(); {
-      f = fibonacci(15);
+      fi1 = fibonacci(15);
    }; TestEnd.Update();
-   cfout << "fibonacci(15): " << f << "\n";
+   cfout << "fibonacci(15): " << (int)f << "\n";
    Diff = TestEnd - TestStart;
    cfout << "%TEST_FINISHED% time: " << Diff << " fibonacci" << "\n";
    cfout << "\n";
    
    cfout << "%TEST_STARTED% fibonacci_by_loop" << "\n";
    TestStart.Update(); {
-      f = fibonacci_by_loop(15);
+      fi1 = fibonacci_by_loop(93);
+      fi2 = fibonacci_by_loop(92);
    }; TestEnd.Update();
-   cfout << "fibonacci_by_loop(15): " << f << "\n";
+   cfout << "fibonacci_by_loop(93): " << (uint64_t)fi1 << "\n";
+   cfout << "fibonacci_by_loop(92): " << (uint64_t)fi2 << "\n";
+   cfout << "Golden ratio: " << ((double)(uint64_t)fi1)/(uint64_t)fi2 << "\n";
    Diff = TestEnd - TestStart;
    cfout << "%TEST_FINISHED% time: " << Diff << " fibonacci_by_loop" <<
       "\n";
