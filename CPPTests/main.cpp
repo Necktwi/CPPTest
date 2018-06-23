@@ -10,6 +10,7 @@
 #include <iostream>
 #include <FerryTimeStamp.h>
 #include <mystdlib.h>
+#include <iomanip>
 
 int main(int argc, const char * argv[]) {
    cfout_ cfout("CPPTestResults.txt");
@@ -36,13 +37,13 @@ int main(int argc, const char * argv[]) {
    TestStart.Update(); {
       f = factorial_by_loop(15);
    }; TestEnd.Update();
-   cfout << "factorial_by_loop(15): " << f << "\n";
+   cfout << "factorial_by_loop(15): " << std::setprecision(14) << f << "\n";
    Diff = TestEnd - TestStart;
    cfout << "%TEST_FINISHED% time: " << Diff << " factorial_by_loop" <<
       "\n";
    cfout << "\n";
    
-   int64_t fi1, fi2;
+   uint64_t fi1, fi2;
    cfout << "%TEST_STARTED% fibonacci" << "\n";
    TestStart.Update(); {
       fi1 = fibonacci(15);
@@ -59,7 +60,7 @@ int main(int argc, const char * argv[]) {
    }; TestEnd.Update();
    cfout << "fibonacci_by_loop(93): " << (uint64_t)fi1 << "\n";
    cfout << "fibonacci_by_loop(92): " << (uint64_t)fi2 << "\n";
-   cfout << "Golden ratio: " << ((double)(uint64_t)fi1)/(uint64_t)fi2 << "\n";
+   cfout << "Golden ratio: " << ((double)fi1)/((double)fi2) <<  "\n";
    Diff = TestEnd - TestStart;
    cfout << "%TEST_FINISHED% time: " << Diff << " fibonacci_by_loop" <<
       "\n";

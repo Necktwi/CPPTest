@@ -67,16 +67,15 @@ unsigned int fibonacci (unsigned int n) {
    }
 }
 
-int64_t fibonacci_by_loop (int64_t n) {
+uint64_t fibonacci_by_loop (int n) {
    signal(SIGABRT, &signalHandler);
-   int64_t n0 = 1;
-   int64_t n1 = 1;
-   int64_t n2 = 1;
+   uint64_t n0 = 1;
+   uint64_t n1 = 1;
+   uint64_t n2 = 1;
    for (;n>2;--n) {
       n2 = n1;
       n1 = n0;
       n0 = n1 + n2;
-      std::cout << n0 << "\n";
    }
    return n0;
 }
