@@ -4,7 +4,8 @@ build*/
 dist/
 QtBuild/
 BuildXcode/
-nbproject/private/private.xml
+nbproject/private/
+**/xcuserdata/
 **/.DS_Store
 **/._*
 *.user

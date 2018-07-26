@@ -2,7 +2,7 @@
 
 %TEST_STARTED% factorial
 factorial(15): 1307674368000
-%TEST_FINISHED% time: 0000000000.000007000 factorial
+%TEST_FINISHED% time: 0000000000.000000000 factorial
 
 %TEST_STARTED% factorial_by_loop
 factorial_by_loop(15): 1307674368000
@@ -10,13 +10,13 @@ factorial_by_loop(15): 1307674368000
 
 %TEST_STARTED% fibonacci
 fibonacci(15): 2004310016
-%TEST_FINISHED% time: 0000000000.000004000 fibonacci
+%TEST_FINISHED% time: 0000000000.000005000 fibonacci
 
 %TEST_STARTED% fibonacci_by_loop
 fibonacci_by_loop(93): 12200160415121876738
 fibonacci_by_loop(92): 7540113804746346429
 Golden ratio: 1.6180339887499
-%TEST_FINISHED% time: 0000000000.001268000 fibonacci_by_loop
+%TEST_FINISHED% time: 0000000000.000010000 fibonacci_by_loop
 
 %TEST_STARTED% print ClassNStruct
 {
@@ -27,6 +27,6 @@ Golden ratio: 1.6180339887499
 }
 Class size: 12
 Struct size: 12
-%TEST_FINISHED% time: 0000000000.000075000 ClassNStruct
+%TEST_FINISHED% time: 0000000000.000040000 ClassNStruct
 
-%SUITE_FINISHED% time: 0000000000.001612000
+%SUITE_FINISHED% time: 0000000000.000255000
